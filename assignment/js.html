@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript validation</h1>
+
+<p>Please input a number between 1 and 100:</p>
+
+<input id="num">
+
+<button type="button" onclick="myFunction()">insert</button>
+
+<p id="result"></p>
+
+<script>
+function myFunction() {
+    var ab, msg;
+
+    ab = document.getElementById("num").value;
+
+    if (isNaN(ab) || ab < 1 || ab > 100) {
+        msg = "invalid Input";
+    } else {
+        msg = "Valid Input";
+    }
+    document.getElementById("result").innerHTML = msg;
+}
+</script>
+
+</body>
+</html> 
